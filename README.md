@@ -88,12 +88,14 @@ All tests should pass successfully.
 app_music_chart
 ├── src/
 │   ├── __init__.py          # package marker
+│   │   
 │   ├── static/
 │   │   ├── css/
 │   │   │   └── styles.css   # CSS styles
-│   │   └── js/
-│   │       └── script.js    # Client-side JavaScript
-│   │
+│   │   ├── js/
+│   │   │    └── script.js    # Client-side JavaScript
+│   │   ├── images/           # image assets for the app    
+│   │   │ 
 │   ├── templates/
 │   │   ├── index.html       # Main page with music chart
 │   │   ├── search.html      # Search page
@@ -102,7 +104,6 @@ app_music_chart
 │   └── main.py              # Python HTTP server
 │
 ├── tests/
-│   ├── __init__.py          # package marker
 │   ├── conftest.py          # fixtures for pytest
 │   └── test_main.py         # Pytest tests for the server
 │
